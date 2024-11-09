@@ -15,12 +15,6 @@ const { authMiddleware } = require('./utils/auth');
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// Enable CORS for all routes or specify options
-// app.use(cors({
-//   origin: process.env.REACT_URL || 'http://localhost:3000', // Assuming your React app runs on this origin
-//   credentials: true, // Allows cookies, authorization headers, etc. with CORS requests
-// }));
-
 /* Apollo Server setup for GraphQL */
 const server = new ApolloServer({
   typeDefs,
